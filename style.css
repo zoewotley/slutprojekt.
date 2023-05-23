@@ -300,9 +300,7 @@ section{
     color: aliceblue;
     text-shadow: var(--box-shadow);
 }
-/*härefter gjorde de en till slider (m tredjepartskod...) palla få f för det liksom*/
 
-/*fml ät så less, det behövs sliders här mä.. vad gör jag nu då*/
 
 /*listan i blogg-delen*/
 li{
@@ -532,7 +530,7 @@ html, body{
     color: var(--box-shadow);
 }
 
-/*det går inte att scrolla på min andra html?*/
+
 
 
 
