@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakning...</title>
+
+    <!--länk till ikoner vne vrf det behövs-->
+    <link rel="stylesheet" href="https://img.icons8.com/ios/50/menu--v1.png">
+    <link rel="stylesheet" href="https://img.icons8.com/ios/50/search--v1.png">
+
+    <!--andra htmlsidan-->
+   <a href="recept.html"></a>
+
+    <!-- css-fil  -->
+    <link rel="stylesheet" href="style.css">
+    <!--länk till js jquery-->
+   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+</head>
+<body>
+    
+    <!-- header section start-->
+    <header class="header">
+        <div class="logoContent">
+            <a href="#"> <img class="logo" src="" alt=""></a>
+            <h1 class="logoName">Bakning4life!</h1>
+        </div>
+
+        <nav class="navbar">
+            <a href="#hem">hem</a>
+            <a href="#info">info</a>
+            <a href="recept.html">recept</a>
+            <a href="#blogg">blogg</a>
+            <a href="#footer">kontakt</a>
+        </nav>
+
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <img id="sökikon" width="20" height="20" src="https://img.icons8.com/ios/50/search--v1.png" alt="search--v1"/>
+            <i class="fas fa-bars" id="menu-bar"></i>
+            <img id="menyikon" width="20" height="20" src="https://img.icons8.com/ios/100/menu--v1.png" alt="menu--v1"/>
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="sök...">
+        </div>
+    </header>
+    <!--header-sektionen slutar här-->
+
+<!--nu testar vi lite kul js-->
+<div class="container"> 
+    <section class="background">
+        <div class="content-wrapper">
+            <p class="content-title">info!</p>
+            <a href="recept.html"><button>ta mig till info</button></a>
+            <p class="content-subtitle">Lorem ipsum dolor sit amet.</p>
+        </div>
+    </section>
+    <section class="background">
+        <div class="content-wrapper">
+            <p class="content-title">recept!</p>
+            <a href="recept.html"><button>ta mig till recept</button></a>
+            <p class="content-subtitle">Lorem ipsum dolor sit amet.</p>
+        </div>
+    </section>
+    <section class="background">
+        <div class="content-wrapper">
+            <p class="content-title">blogg!</p>
+            <a href="#blogg"><button>ta mig till bloggen</button></a>
+            <p class="content-subtitle">Lorem ipsum dolor sit amet.</p>
+        </div>
+    </section>
+    <section class="background">
+        <div class="content-wrapper">
+            <p class="content-title">kontakt!</p>
+            <a href="#footer"><button>ta mig till kontakt</button></a>
+            <p class="content-subtitle">Lorem ipsum dolor sit amet.</p>
+        </div>
+    </section>
+</div>
+    
+    <!--hem-sektionen börjar här-->
+    
+            <section class="hem" id="hem">
+                <div class="hemContent">
+                <h2>Gud så kul med tårta!</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto perspiciatis facilis expedita soluta nostrum ea?</p>              
+                     <div class="hemknapp">
+                       <a href="#"><button>Läs mer?</button></a>
+                     </div>
+                </div>
+            </section>
+    <!--hem-sektionen slutar här-->
+
+    <!--recept-sektionen börjar här-->
+    <section class="recept" id="recept">
+        <div class="heading">
+            <h2>Recept</h2>
+        </div> <!-- en recept-grej-->
+            <div class="recept-rad">
+            <div class="box">
+                 <div class="img">
+                    <img src="img/chococake.avif" alt="">
+                 </div>
+                 <div class="receptContent">
+                    <h3>choklad1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, ut.</p>
+                    <div class="seRecept">
+                        <button>Se recept</button>
+                    </div>
+                 </div>
+            </div>
+        </div> <!-- en till recept-grej-->
+    <div class="recept-rad">
+        <div class="box">
+            <div class="img">
+               <img src="img/chococake.avif" alt="">
+            </div>
+            <div class="receptContent">
+               <h3>choklad2</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, ut.</p>
+               <div class="seRecept">
+                   <button>Se recept</button>
+               </div>
+            </div>
+       </div> 
+    </div> <!-- en till recept-grej-->
+    <div class="recept-rad">
+        <div class="box">
+             <div class="img">
+                <img src="img/chococake.avif" alt="">
+             </div>
+             <div class="receptContent">
+                <h3>choklad3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, ut.</p>
+                <div class="seRecept">
+                    <button>Se recept</button>
+                </div>
+             </div>
+        </div>
+    </div> <!--Ba en till recept-grej-->
+    <div class="recept-rad">
+        <div class="box">
+             <div class="img">
+                <img src="img/chococake.avif" alt="">
+             </div>
+             <div class="receptContent">
+                <h3>choklad4</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, ut.</p>
+                <div class="seRecept">
+                    <button>Se recept</button>
+                </div>
+             </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!--recept-sektionen slutar här-->
+    <!--blogg-sektionen börjar här-->
+    <section class="blogg" id="blogg">
+        
+        <div class="blogg-rad">
+            <div class="box">
+                <div class="img">
+                    <img src="img/chococake.avif" alt="">
+                </div>
+                <div class="content">
+                    <h3>Bakblogg</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem ipsum dolor sit.</li>
+                    </ul>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat repellendus atque quae nulla quidem aliquam</p>
+                    <a href="#blogg" class="btn">läs mer...</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--blogg-sektionen slutar här (det blev kort eftersom jag skippade js-slidern med tredjepartskod...)-->
+
+
+    <!--footern startar här-->
+    <footer class="footer" id="contact">
+        <div class="box-container">
+            <div class="mainBox">
+                <div class="content">
+                    <a href="">logga</a>
+                    <h1 class="logoName"></h1>
+                </div>
+                <p>Skapad av en ikon som verkligen förtjänar ett A i betyg🙏🙏🙏</p>
+            </div>
+            <div class="box">
+                <h3>Snabblänkar</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Hem</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Recept</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Blogg</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Info</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Kontakt</a>
+            </div>
+            <!--en till box, för andra länkar.-->
+            <div class="box">
+                <h3>Kontaktinformation</h3>
+                <div class="fasfaicons">
+                <img width="35" height="35" src="https://img.icons8.com/ios/50/phone--v1.png" alt="phone--v1"/><p>093982940</p>
+                <img width="35" height="35" src="https://img.icons8.com/ios/50/filled-message.png" alt="filled-message"/><p>hej@bakningsmail.no</p>
+                <img width="40" height="40" src="https://img.icons8.com/color/100/instagram-new--v1.png" alt="instagram-new--v1"/><p >@bagarenbengtsson_98</p>
+                </div>
+            </div>  
+        </div>
+        <div class="share">
+            <a href="#" class="fas fa-instagram"></a>
+        </div>
+    </footer>
+    <!--footern slutar här-->
+
+
+
+    <!-- js-fil-->
+    <script src="index.js"></script>
+    
+</body>
+</html>

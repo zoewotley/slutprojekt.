@@ -1,0 +1,601 @@
+@import 'https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,400;1,100;1,200&family=Noto+Serif+Display&display=swap';
+
+
+:root{
+    --black: #1c9577;
+    --white: #b41313;
+    --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+*{
+    font-family: 'Kanit', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+
+}
+
+html{
+    font-size: 62.5%;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+/* typ inte nödvändigt.. scrollgrejen till höger på websidor...*/
+
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #1c9577;
+    border-radius: 5rem;
+}
+
+html::-webkit-scrollbar-thumb:hover{
+    background: #83cfbc;
+}
+
+/* tror att hela headern ska hänga med? det stylear headern iaf*/ 
+
+.header{
+    top: 0; right: 0; left: 0;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 1.4rem 7%;
+    z-index: 999;
+}
+
+/* rubrik style typ (med img som kan vara vid rubriken*/
+.header .logoContent{
+    display: flex;
+    align-items: center;
+}
+
+
+.header .logoContent .logo img{
+    height: 4rem;
+}
+
+.header .logoContent .logoName{
+    color:aquamarine;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/*länkarna i nav*/
+
+.header .navbar a{
+    font-size: 2rem;
+    margin-right: 3rem;
+    color:#929c47;
+    font-weight: bold;
+}
+
+.header .navbar a:hover{
+    border-bottom: .1rem solid rgb(255, 139, 255);
+    padding-bottom: .4rem ;
+
+}
+
+.header .icon img{
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+.header .search{
+    display: none;
+    top:100% ;
+    margin: 1.5rem 7%;
+    background-color:bisque;
+    width: 50%;
+    right: 0;
+    height: 5rem;
+    position: absolute;
+
+}
+.header .search input{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    background-color: #929c47;
+    color: #000000;
+    margin-right: 7%;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.header .search.active{
+    display: inline-block;
+}
+
+#menyikon{
+    display:none;
+}
+
+/*här börjar hem-relaterat*/
+
+.hem{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(img/cakepic.avif) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.hem .hemContent{
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 4rem;
+}
+
+.hem .hemContent h2{
+    font-size: 7rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    line-height: 7rem;
+    color: rgb(0, 170, 255);
+    text-shadow: var(--box-shadow);
+}
+
+.hem .hemContent p{
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hem .hemContent .hemknapp{
+    height: 3rem;
+}
+
+.hem .hemContent .hemknapp button{
+    font-size: 1.8rem;
+    background-color: #929c47;
+    color: azure;
+    border-radius: .7rem;
+    padding: .7rem 2.4rem;
+    cursor: pointer;
+}
+
+.hem .hemContent .hemknapp button:hover{
+    font-size: 2rem;
+}
+
+/*receptdelen här*/
+/*ska man lägga in en slider typ?*/
+section{
+    padding: 2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    color: rgb(80, 134, 182);
+    border: .1rem solid rgb(5, 99, 239);
+}
+
+.recept .row{
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.recept .recept-rad .box{
+    display:flex;
+    flex-direction: column;
+    width: 35rem;
+    background-color: #83cfbc;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-radius: 3rem;
+    margin: 2rem;
+}
+
+.recept .recept-rad .img img{
+    height: 100%;
+    width: 100%;
+}
+
+.recept .recept-rad .img img:hover{
+    transform: scale(1.1);
+}
+
+.recept .recept-rad .receptContent{
+    margin-bottom: 4rem;
+}
+
+.recept .recept-rad .receptContent h3{
+    font-size: 4rem;
+    color: rgb(247, 247, 45);
+     
+}
+
+.recept .recept-rad .receptContent p{
+    font-size: 1.5rem;
+    line-height:1.6rem;
+    color: #b41313;
+}
+
+.recept .recept-rad .receptContent .seRecept{
+    height: 3rem;
+    margin-top: 2rem;
+}
+
+.recept .recept-rad .receptContent .seRecept button{
+    font-size: 1.8rem;
+    background-color: rgb(119, 87, 46);
+    color: aqua;
+    border-radius: .7rem;
+    padding: .7rem 2rem;
+    cursor: pointer;
+}
+
+.recept .recept-rad .receptContent .seRecept button:hover{
+    font-size: 2rem;
+}
+
+/*blogg-delen kommer här:*/
+.blogg{
+    background: url(img/cakepic.avif) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /*ev ändra till vanlig bakgrundsfärg, känns onödigt med en bild om den ba ska va grå*/
+}
+.blogg .blogg-rad .box{
+    display: flex;
+    align-items: center;
+    background-color: #ffaaaa;
+    flex-direction: row ;
+}
+
+.blogg .blogg-rad .box .img{
+    flex: 1 1 45rem;
+}
+
+.blogg .blogg-rad .box .img img{
+    width: 100%;
+    padding: 4rem;
+}
+
+.blogg .blogg-rad .box .content{
+    flex: 1 1 45rem;
+    padding: 3rem;
+}
+
+.blogg .blogg-rad .box .content h3{
+    font-size: 3.5rem;
+    color:aqua;
+    text-shadow: var(--box-shadow);
+}
+
+.blogg .blogg-rad .box .content p{
+    font-size: 1.6rem;
+    color: beige;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.blogg .blogg-rad .box .content a{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.blogg .blogg-rad .box .content a:hover{
+    color: aliceblue;
+    text-shadow: var(--box-shadow);
+}
+/*härefter gjorde de en till slider (m tredjepartskod...) palla få f för det liksom*/
+
+/*fml ät så less, det behövs sliders här mä.. vad gör jag nu då*/
+
+/*listan i blogg-delen*/
+li{
+    list-style:inside;
+    color:beige;
+    font-size: 1.4rem;
+}
+
+
+
+/*footer-sektionen*/
+.footer{
+    background-color: aliceblue;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.footer .box-container .mainBox .content{
+    display:flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.footer .box-container .mainBox .content h1{
+    font-size: 2rem;
+    color: #929c47;
+}
+
+.footer .box-container .mainBox p{
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-bottom: 1.4rem;
+    text-align: left;
+    color: #3f3f3f;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color: aqua;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.4rem;
+    color:#3f3f3f;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover{
+    padding-right: 2rem;
+    color: var(--box-shadow);
+    font-size: 1.8rem;
+}
+
+.footer .box-container .box .fasfaicons{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.footer .box-container .box .fasfaicons p{
+    font-size: 1.4rem;
+    color:#3f3f3f;
+}
+
+.footer .box-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.footer .box-container .box{
+    flex:2;
+    
+}
+.footer .box-container .mainBox{
+    flex:1;
+}
+
+
+/*rolig js snälla funka*/
+html, body{
+    overflow: hidden;
+}
+
+.background{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    height: 130vh;
+    position: fixed;
+    width: 100%;
+    transform: translateY(30vh);
+    transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
+}
+
+.background:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.background:first-child {
+    background-image: url(img/cakepic.avif);
+    transform: translateY(-15vh);
+}
+
+.background:first-child .content-wrapper {
+    transform: translateY(15vh);
+}
+
+.background:nth-child(2) {
+    background-image: url(img/chococake.avif);
+}
+
+.background:nth-child(3) {
+    background-image: url(img/cakepic.avif);
+}
+
+.background:nth-child(4) {
+    background-image: url(img/cakepic.avif);
+}
+
+/* Sätt staplingskontext för slides */
+.background:nth-child(1) {
+    z-index: 4;
+}
+
+.background:nth-child(2) {
+    z-index: 3;
+}
+
+.background:nth-child(3) {
+    z-index: 2;
+}
+
+.background:nth-child(4) {
+    z-index: 1;
+}
+
+.content-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column nowrap;
+    color: #fff;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    transform: translateY(40vh);
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
+}
+
+.content-title {
+    font-size: 12vh;
+    line-height: 1.4;
+}
+
+.background.up-scroll {
+    transform: translate3d(0, -15vh, 0);
+}
+
+.background.up-scroll .content-wrapper {
+    transform: translateY(15vh);
+}
+
+.background.up-scroll + .background {
+    transform: translate3d(0, 30vh, 0);
+}
+
+.background.up-scroll + .background .content-wrapper {
+    transform: translateY(30vh);
+}
+
+.background.down-scroll {
+    transform: translate3d(0, -130vh, 0);
+}
+
+.background.down-scroll .content-wrapper {
+    transform: translateY(40vh);
+}
+
+.background.down-scroll + .background:not(.down-scroll) {
+    transform: translate3d(0, -15vh, 0);
+}
+
+.background.down-scroll + .background:not(.down-scroll) .content-wrapper {
+    transform: translateY(15vh);
+}
+
+/*här har vi knappar under rubrikerna som förhoppningsvis tar mig till nästa hmtl*/
+.container .background .content-wrapper button{
+    text-align: center;
+    font-size: 1.6rem;
+    color: aqua;
+    background-color: antiquewhite;
+    border-radius: .7rem;
+    padding: .7rem .4rem;
+    cursor: pointer;
+    height: 4rem;
+}
+
+.container .background .content-wrapper button:hover{
+    font-size: 2rem;
+    color: var(--box-shadow);
+}
+
+/*det går inte att scrolla på min andra html?*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries för responsiv sida*/
+@media (max-width:991px){
+    html{
+        font: size 55%;
+    }
+    .header{
+        padding: 1.3rem 3rem;
+    }
+    /*inkluderar hem-relaterat här för att det oxå ska va responsivt*/
+    .hem .hemContent{
+        margin-left: 0;
+        width: 80%;
+    }
+}
+
+@media (max-width:768px){
+    #menyikon{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 25rem;
+        background-color: aquamarine;
+        color: #b41313;
+        height: 80vh;
+    }
+
+    .header .navbar.active{
+        right: 0;
+    }
+
+    .header .navbar a{
+        display: block;
+        font-size: rem;
+        color: #000000;
+        margin: 1.5rem;
+    }
+    .hem .hemContent{
+        margin-left: 0;
+        width: 90%;
+    }
+    .slideshow-text{
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width:600px){
+    html{
+        font-size: 50%;
+    }
+}
