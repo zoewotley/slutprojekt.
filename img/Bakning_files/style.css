@@ -248,17 +248,12 @@ section{
     font-size: 2rem;
 }
 
-.recept .flerRknapp button{
+.recept .flerRknapp{
     font-size: 2rem;
-    background-color: #71c8ff;
-    color:rgb(59, 68, 78);
+    color: #bcdff4;
     cursor: pointer;
-    border-radius: .7rem;
-    padding: .7rem 1.3rem;
-}
-
-.recept .flerRknapp button:hover{
-    font-size: 2.3rem;
+    border-radius: .9rem;
+    padding: .7rem .2rem;
 }
 
 /*blogg-delen kommer här:*/
@@ -400,19 +395,19 @@ li{
 
 
 
-
-
-
 /*media queries för responsiv sida*/
-
-@media (max-width:576px){
+@media (max-width:991px){
     html{
-        font-size: 50%;
+        font-size: 55%;
     }
-    .recept .recept-rad .box{
-        size: 20%;
+    .header{
+        padding: 1.3rem 3rem;
     }
-
+    /*inkluderar hem-relaterat här för att det oxå ska va responsivt*/
+    .hem .hemContent{
+        margin-left: 0;
+        width: 80%;
+    }
 }
 
 @media (max-width:768px){
@@ -425,6 +420,7 @@ li{
         right: -100%;
         width: 25rem;
         background-color: rgb(168, 218, 220);
+        color: #b41313;
         height: 80vh;
     }
 
@@ -447,30 +443,9 @@ li{
     }
 }
 
-@media (max-width:992px){
+
+@media (max-width:600px){
     html{
-        font-size: 55%;
-    }
-    .header{
-        padding: 1.3rem 3rem;
-    }
-    /*inkluderar hem-relaterat här för att det oxå ska va responsivt*/
-    .hem .hemContent{
-        margin-left: 0;
-        width: 80%;
+        font-size: 50%;
     }
 }
-
-@media (max-width:1200px){
-    html{
-        font-size: 60%;
-    }
-    .header{
-        padding: 1.8rem 4rem;
-    }
-    .hem .hemContent{
-        margin-left: 0;
-        width: 90%;
-    }
-}
-
