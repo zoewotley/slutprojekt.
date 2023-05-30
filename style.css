@@ -26,21 +26,21 @@ html{
 /* typ inte nödvändigt.. scrollgrejen till höger på websidor...*/
 
 
-html::-webkit-scrollbar{
+html ::-webkit-scrollbar{
     width: .8rem;
 }
 
-html::-webkit-scrollbar-track{
+html ::-webkit-scrollbar-track{
     background: transparent;
 }
 
-html::-webkit-scrollbar-thumb{
-    background: #1c9577;
+html ::-webkit-scrollbar-thumb{
+    background: #1c7595;
     border-radius: 5rem;
 }
 
-html::-webkit-scrollbar-thumb:hover{
-    background: #83cfbc;
+html ::-webkit-scrollbar-thumb:hover{
+    background: #269cc6;
 }
 
 /* tror att hela headern ska hänga med? det stylear headern iaf*/ 
@@ -188,7 +188,7 @@ section{
 }
 
 .recept .recept-rad{
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     align-items: center;
 }
 
@@ -215,7 +215,7 @@ section{
 }
 
 .recept .recept-rad .receptContent{
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .recept .recept-rad .receptContent h3{
@@ -401,8 +401,6 @@ li{
 
 
 
-
-
 /*media queries för responsiv sida*/
 
 @media (max-width:576px){
@@ -410,9 +408,16 @@ li{
         font-size: 50%;
     }
     .recept .recept-rad .box{
-        size: 20%;
+        width: 20rem;
+    }
+    .footer .box-container .box h3{
+       font-size: 1.9rem;
+    }
+    .footer .box-container .box h1{
+        font-size: 1.5rem;
     }
 
+   
 }
 
 @media (max-width:768px){
@@ -425,7 +430,7 @@ li{
         right: -100%;
         width: 25rem;
         background-color: rgb(168, 218, 220);
-        height: 80vh;
+        height: 40vh;
     }
 
     .header .navbar.active{
@@ -442,8 +447,11 @@ li{
         margin-left: 0;
         width: 90%;
     }
-    .slideshow-text{
-        font-size: 40px;
+    .recept .recept-rad .box{
+        width: 24rem;
+    }
+    section{
+        padding: 1.6rem;
     }
 }
 
@@ -453,11 +461,11 @@ li{
     }
     .header{
         padding: 1.3rem 3rem;
-    }
-    /*inkluderar hem-relaterat här för att det oxå ska va responsivt*/
+    } 
+    /*den här gör ju inget..*/
     .hem .hemContent{
         margin-left: 0;
-        width: 80%;
+        width: 90%;
     }
 }
 
@@ -470,7 +478,7 @@ li{
     }
     .hem .hemContent{
         margin-left: 0;
-        width: 90%;
+        width: 100%;
     }
 }
 

@@ -1,46 +1,56 @@
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-auto-rows: minmax(1fr, auto);
+    gap: 0;
+    grid-template-areas: 
+    "recept3 "
+    "recept2 "
+    "recept4 "
+    "recept1 "
+    "knapp ";
 }
 
-
-.första{
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
+ .första{
+    grid-area: recept1;
+ }
 
  .andra{
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
+    grid-area: recept2;
+ }
 
-.tredje{
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
+ .tredje{
+    grid-area: recept3;
+ }
 
-.fjärde{
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
+ .fjärde{
+    grid-area: recept4;
+ }
 
 .flerRknapp{
-    grid-column: 1/-1;
-    grid-row: 3/4;
-    display: flex;
-    justify-content: center;
+    grid-area: knapp;
 }
 
+/*media query!*/
 
-@media screen and (max-width:576px){
-   .container{
-    grid-column: 1/2;
-   }
-}
-
-@media screen and (max-width:768px){
+ @media (max-width: 1600px){
     .container{
-        grid-column: 1/-1;
+     grid-template-areas: 
+     "recept1 recept2"
+     "recept3 recept4"
+     "knapp knapp";
     }
-}
+  }
+
+ 
+ @media (max-width: 576px){
+   .container{
+    grid-template-areas: 
+    "recept1 recept1"
+    "recept2 recept2"
+    "recept3 recept3"
+    "recept4 recept4"
+    "knapp knapp";
+   }
+ }
+  
+
+
