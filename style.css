@@ -64,7 +64,8 @@ html ::-webkit-scrollbar-thumb:hover{
 
 
 .header .logoContent .logo{
-    height: 4rem;
+    height: 3rem;
+    width: 3rem;
 }
 
 .header .logoContent .logoName{
@@ -89,7 +90,8 @@ html ::-webkit-scrollbar-thumb:hover{
 }
 
 .header .icon img{
-    font-size: 2rem;
+    height: 2rem;
+    width: 2rem;
     margin-right: 2rem;
 }
 
@@ -178,6 +180,7 @@ html ::-webkit-scrollbar-thumb:hover{
 /*receptdelen här*/
 section{
     padding: 2rem 7%;
+    background-color: #9dddff85;
 }
 
 .heading{
@@ -279,7 +282,8 @@ section{
 
 .blogg .blogg-rad .box .img img{
     width: 100%;
-    padding: 4rem;
+    height: 100%;
+    padding: 2.5rem;
 }
 
 .blogg .blogg-rad .box .content{
@@ -334,7 +338,7 @@ li{
 .footer .box-container .mainBox .content{
     display:flex;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2.4rem;
 }
 
 .footer .box-container .mainBox .content h6{
@@ -351,7 +355,7 @@ li{
 }
 
 .footer .box-container .box h6{
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: rgb(34, 77, 107);
     padding: 1rem 0;
 }
@@ -397,16 +401,18 @@ li{
     flex:1;
 }
 
+
+
 /*info-delen kommer här:*/
 .info{
-    background-color: #370050bc;
+    background-color: #e1ffc9;
     padding: 5rem;
    }
 
 .info .info-rad .box{
     display: flex;
     align-items: center;
-    background-color: #fdceff;
+    background-color: #96c572;
     flex-direction: row ;
 }
 
@@ -426,23 +432,23 @@ li{
 
 .info .info-rad .box .content h2{
     font-size: 4rem;
-    color:rgba(102, 3, 141, 0.588);
-    text-shadow: 2px 2px 2px #A5A5A5;
+    color:#07410fc0;
+    text-shadow: 1px 1px 1px #4b6538;
 }
 
 .info .info-rad .box .content p{
     font-size: 1.6rem;
-    color: rgb(90, 5, 126);
+    color: #07410fc0;
     padding: 1rem 0;
     line-height: 1.8;
 }
 .info .info-rad .box .content a{
     font-size: 2rem;
     cursor: pointer;
-    color:rgb(72, 8, 54);
+    color:#07410fc0;
 }
 .info .info-rad .box .content a:hover{
-    color:rgba(134, 28, 104, 0.69);
+    color:#f0ffe4;
     text-shadow: 2px 2px 2px #A5A5A5;
 }
 

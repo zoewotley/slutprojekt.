@@ -11,22 +11,32 @@
 
  .första{
     grid-area: recept1;
+    display: flex;
+    justify-content: center;
  }
 
  .andra{
     grid-area: recept2;
+    display: flex;
+    justify-content: center;
  }
 
  .tredje{
     grid-area: recept3;
+    display: flex;
+    justify-content: center;
  }
 
  .fjärde{
     grid-area: recept4;
+    display: flex;
+    justify-content: center;
  }
 
 .flerRknapp{
     grid-area: knapp;
+    display: flex;
+    justify-content: center;
 }
 
 /*media query!*/
